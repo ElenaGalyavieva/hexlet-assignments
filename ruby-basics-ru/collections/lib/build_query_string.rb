@@ -2,6 +2,7 @@
 
 # rubocop:disable Style/For
 # BEGIN
+gem 'sorted_set'
 def build_query_string(page)
   query_string = []
   arr = SortedSet.new(page)
