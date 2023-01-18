@@ -2,12 +2,11 @@
 
 # rubocop:disable Style/For
 # BEGIN
-gem 'sorted_set'
+
 def build_query_string(page)
   query_string = []
-  arr = SortedSet.new(page)
   result = ''
-  arr.each do |key, value|
+  page.sort.each do |key, value|
     query_string << "#{key}=#{value}"
     result = query_string.join('&')
   end

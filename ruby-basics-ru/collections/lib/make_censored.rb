@@ -2,8 +2,8 @@
 
 # rubocop:disable Style/For
 
-def make_censored(text, stop_words)
   # BEGIN
+def make_censored(text, stop_words)
   text1 = []
   text1 << text
   result = []
@@ -14,9 +14,8 @@ def make_censored(text, stop_words)
       else
         result << n
       end
-  end
+             end
   result.join(' ')
 end
-
   #END
 # rubocop:enable Style/For
